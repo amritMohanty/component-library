@@ -4,28 +4,40 @@
 --black: hsla(0, 0%, 0%, 1);
 --oxford-blue: hsla(221, 51%, 16%, 1);
 --orange-web: hsla(37, 98%, 53%, 1);
---platinum: rgb(183, 183, 183);
+--platinum: rgb(238, 238, 238);
 --white: hsla(0, 0%, 100%, 1);
 --red: #ff206e;
 }
-.container{
-    padding-left: 1rem ;
-    padding-right: 1rem ;
+body{
+    font-family: 'Bricolage Grotesque', sans-serif;
+
+    margin: 0;
+    
 }
 hr{
     margin: 2rem 0rem ;
 }
 
+/* @lists */
+
 ul{
     list-style: none;
 }
 
+/* @container */
 
+.container{
+    padding-left: 1rem ;
+    padding-right: 1rem ;
+}
 
 .container-center{
     max-width: 600px;
     margin: auto;
 }
+
+/* @links */
+
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -40,12 +52,19 @@ ul{
     background-color: var(--orange-web);
     box-shadow: 0.5rem 0.5rem var(--platinum);
 }
+.link--secondary{
+    color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 0.5rem;
+}
 .link--secondary:hover{
     color: var(--orange-web);
     border: 1px solid var(--orange-web);
     box-shadow: 0.5rem 0.5rem var(--platinum);
     
 }
+
+/* @nav bar stuff */
 
 .nav--list{
     margin-top: 1rem;
@@ -62,25 +81,62 @@ ul{
     padding-top: 1rem;
 }
 
-.link--secondary{
-    color: var(--red);
-    border: 1px solid var(--red);
-    border-radius: 0.5rem;
-}
+
 
 nav {
     background: linear-gradient(90deg, rgba(252,163,17,1) 30%, rgba(255,32,110,1) 100%);
     padding: 1rem;
-    
-    /* color:  ; */
+    border-radius: 0rem 1rem;
 }
-
 nav .link{
     color: var(--white);
+    
 }
 
-body{
-    font-family: 'Bricolage Grotesque', sans-serif;
-    max-width: 70rem;
+.active{
+    font-weight: 900;
+}
+
+/* @header */
+
+.hero{
+    display: block;
+}
+
+.hero .hero--heading{
+    font-weight:800;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.hero span{
+    color: var(--red);
+}
+
+.hero .hero--img{
+    max-width: 600px;
+    display: block;
     margin: auto;
+}
+
+/* sections */
+section{
+    padding: 1rem;
+}
+
+.off-white{
+    background-color: var(--platinum);
+}
+
+section h3{
+    text-align: center;
+    padding: 1rem;
+}
+
+/* @footer */
+
+footer{
+    padding: 2rem;
+    background-color: var(--platinum);
+    text-align: center;
 }

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400;10..48,800&display=swap');
+
+:root{
+--black: hsla(0, 0%, 0%, 1);
+--oxford-blue: hsla(221, 51%, 16%, 1);
+--orange-web: hsla(37, 98%, 53%, 1);
+--platinum: rgb(183, 183, 183);
+--white: hsla(0, 0%, 100%, 1);
+--red: #ff206e;
+}
+.container{
+    padding-left: 1rem ;
+    padding-right: 1rem ;
+}
+hr{
+    margin: 2rem 0rem ;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+.container-center{
+    max-width: 600px;
+    margin: auto;
+}
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+}
+.link--primary{
+    background-color: var(--red);
+    border-radius: 0.5rem;
+    color: var(--white);
+}
+.link--primary:hover{
+    background-color: var(--orange-web);
+    box-shadow: 0.5rem 0.5rem var(--platinum);
+}
+.link--secondary:hover{
+    color: var(--orange-web);
+    border: 1px solid var(--orange-web);
+    box-shadow: 0.5rem 0.5rem var(--platinum);
+    
+}
+
+.nav--list{
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.list-item-inline{
+    display:inline;
+    padding: 0rem 1rem;
+}
+
+.img--brand{
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.link--secondary{
+    color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 0.5rem;
+}
+
+nav {
+    background: linear-gradient(90deg, rgba(252,163,17,1) 30%, rgba(255,32,110,1) 100%);
+    padding: 1rem;
+    
+    /* color:  ; */
+}
+
+nav .link{
+    color: var(--white);
+}
+
+body{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    max-width: 70rem;
+    margin: auto;
+}

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400;10..48,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 :root{
 --black: hsla(0, 0%, 0%, 1);
@@ -7,6 +8,7 @@
 --platinum: rgb(238, 238, 238);
 --white: hsla(0, 0%, 100%, 1);
 --red: #ff206e;
+--eerie-black: #040a0f;
 --gradient: linear-gradient(90deg, rgba(252,163,17,1) 30%, rgba(255,32,110,1) 100%);
 }
 body{
@@ -100,7 +102,7 @@ ul{
 
 nav {
     background: linear-gradient(90deg, rgba(252,163,17,1) 30%, rgba(255,32,110,1) 100%);
-    padding: 1rem;
+    padding: 0.001rem 1rem;
     /* border-radius: 0rem 1rem; */
 }
 nav .link{
@@ -150,12 +152,37 @@ section h2{
 }
 .img--id{
     height:20rem ;
-    width:20.2rem ;
+    width:17rem ;
     display: block;
     margin: auto;
-    border-radius: 5rem;
+    border-radius: 1rem;
 
 }
+
+/* @backdrop */
+.backdrop{
+    display: block;
+    background-image: url('images/backdrop-4.jpeg');
+    height: 30rem;
+    padding: 0rem 0rem;
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition-duration: 3000ms;
+}
+.heading--backdrop{
+    
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    backdrop-filter: brightness(60%) blur(3px);
+    display: block;
+    padding: 13rem 0rem;
+    margin: 0 0; 
+}
+
+
+
 /* @footer */
 
 footer{
